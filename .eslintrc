@@ -1,0 +1,16 @@
+{
+  "extends": "airbnb",
+  "env": {
+    "jquery" : true
+  },
+  rules : {
+    "new-cap": [2, { "capIsNewExceptions": [
+      "Router"
+    ]}],
+    "indent": [2, 2, {"SwitchCase": 1}],
+    "object-curly-spacing": [2, "never"],
+    "arrow-parens": [2, "always"],
+    "no-param-reassign": [2, {"props": false}]
+  },
+  "parser" : "babel-eslint"
+}

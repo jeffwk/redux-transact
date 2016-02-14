@@ -1,0 +1,12 @@
+**/*.js
+tasks/*.js
+!gulpfile.js
+!client/private/**/*.js
+!client/private/**/*.jsx
+!client/private/*.js
+!client/private/*.jsx
+!server/*.js
+!server/**/*.js
+server/tests/*.js
+server/tests/**/*.js
+!common/src/*.js
