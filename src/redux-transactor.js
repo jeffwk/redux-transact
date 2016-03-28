@@ -1,6 +1,11 @@
 import log from 'loglevel';
 import {Promise} from 'bluebird';
 import _ from 'underscore.lifted';
+
+const global = global || {};
+const window = window || {};
+const $ = $ || window.$ || global.$ || require('jquery');
+
 const ajax = $.ajax;
 
 const defaultErrorHandler = (e) => {
