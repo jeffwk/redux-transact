@@ -1,6 +1,6 @@
 {
   "name": "redux-transact",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "private": false,
   "description": "Simple redux ajax transactor",
   "main": "lib/index.js",

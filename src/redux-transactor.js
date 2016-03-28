@@ -1,17 +1,12 @@
 import log from 'loglevel';
 import {Promise} from 'bluebird';
 import _ from 'underscore.lifted';
-
-const global = global || {};
-const window = window || {};
-const $ = $ || window.$ || global.$ || require('jquery');
-
-const ajax = $.ajax;
+import {ajax} from 'jquery'
 
 const defaultErrorHandler = (e) => {
   log.error('Error received in transactor');
   log.error(e);
-  throw e;
+  log.error(e.trace());
 };
 
 /**
