@@ -6,7 +6,7 @@ import {ajax} from 'jquery'
 const defaultErrorHandler = (e) => {
   log.error('Error received in transactor');
   log.error(e);
-  log.error(e.trace());
+  log.error(e.stack);
 };
 
 /**
